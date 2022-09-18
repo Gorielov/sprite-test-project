@@ -1,0 +1,218 @@
+.footer {
+    // mobile
+    background-position: 50% 50%;
+    background-size: contain;
+    margin-right: auto;
+    margin-left: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 1280px;
+    box-shadow: 0px -4px 24px rgba(105, 105, 105, 0.1);
+  
+    background-image: url('/src/images/footer-bg/footer-mob-bg1x.png');
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url('/src/images/footer-bg/footer-mob-bg-2x.png');
+    }
+  
+    // tablet
+  
+    @media screen and (min-width: 768px) {
+      background-image: url('/src/images/footer-bg/footer-tablet1x.png');
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('/src/images/footer-bg/footer-tablet2x.png');
+      }
+    }
+  
+    //  desktop
+  
+    @media screen and (min-width: 1280px) {
+      background-image: url('/src/images/footer-bg/footer-desktop1x.png');
+  
+      @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+        background-image: url('/src/images/footer-bg/footer-desktop2x.png');
+      }
+    }
+  
+    &__nav {
+      @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+  
+        gap: 28px;
+      }
+    }
+    &__nav-list {
+      @media screen and (max-width: $tablet) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin-left: 81px;
+      }
+      @media screen and (min-width: $tablet) {
+        margin-left: 114px;
+      }
+    }
+    &__nav-item {
+      font-style: normal;
+      font-size: 14px;
+      line-height: 1.14;
+      color: $dark-color;
+      list-style: none;
+      margin-bottom: 20px;
+    }
+  
+    &__input-line {
+      
+      font-size: 12px;
+      line-height: 15px;
+      color: #505050;
+      border: 0.854167px solid #ffe550;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      max-width: 280px;
+      height: 42px;
+      padding-left: 12px;
+      @media screen and (min-width: $tablet) {
+        margin-right: 13px;
+        margin-bottom: 0;
+        max-width: 394px;
+      }
+      @media screen and (min-width: $desktop) {
+        max-width: 394px;
+        margin-right: 32px;
+      }
+    }
+    .footer__button {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+      max-width: 103px;
+      height: 42px;
+      border: 0.854167px solid #7eb101;
+      border-radius: 20px;
+      background-color: #ffffff;
+      color: $dark-color;
+      padding: 11px 22px;
+      @media screen and (min-width: $tablet) {
+        margin-bottom: 0;
+      }
+    }
+    &__subscribe {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin-bottom: 12px;
+      }
+    }
+    &__subs-title {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 150%;
+      color: $dark-color;
+      margin-bottom: 12px;
+    }
+    &__text {
+      
+      font-size: 10px;
+      line-height: 12px;
+      color: $dark-color;
+      margin-bottom: 60px;
+  
+      @media screen and (min-width: $tablet) {
+        margin-bottom: 100px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+  
+    &__policy {
+      
+      font-size: 10px;
+      line-height: 12px;
+      text-decoration-line: underline;
+      color: #7eb101;
+      @media screen and (min-width: $tablet) {
+        margin-bottom: 100px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+  
+    &__policy_list {
+      
+      font-size: 10px;
+      line-height: 12px;
+      text-decoration-line: underline;
+      color: #7eb101;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      margin-bottom: 40px;
+      @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 20px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+  
+    &__bottom {
+      @media screen and (min-width: $tablet) {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+      }
+    }
+  
+    &__foodstra {
+      display: flex;
+      
+      font-size: 10px;
+      line-height: 12px;
+      color: $dark-color;
+      justify-content: center;
+      @media screen and (min-width: $tablet) {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+  
+    &__cont-desktop {
+      @media screen and (min-width: $desktop) {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+  
