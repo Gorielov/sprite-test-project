@@ -1,0 +1,199 @@
+.customer__say {
+    width: 320px;
+    // height: 769px;
+    background-image: url(../images/mobile/1x_320_bottom.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    // z-index: 1;
+    background-position: bottom ;
+
+
+    @media screen and(min-width:$mobile) {
+        background-image: url(../images/mobile/1x_480_bottom.jpg);
+        width: 480px;
+        // height: 769px;
+    }
+
+    @media screen and(min-width:$tablet) {
+        background-image: url(../images/tablet/1x_bottom.jpg);
+        width: 768px;
+        // height: 554px;
+
+    }
+
+    @media screen and(min-width:$desktop) {
+        background-image: url(../images/desktop/1x_bottom.jpg);
+        width: 1280px;
+        // height: 647px;
+    }
+}
+
+// @media screen and (max-width:$mobile) {
+
+//     @media screen and (min-device-pixel-ratio: 2),
+//     screen and (-webkit-min-device-pixel-ratio: 2),
+//     screen and (min-resolution: 192dpi),
+//     screen and (min-resolution: 2dppx),
+//     screen and (min-resolution: 192dpi),
+//     screen and (min-resolution: 2dppx) {
+//         .background__wave {
+//             background-image: url(../images/mobile/2x_320_bottom.jpg);
+//         }
+//     }
+// }
+
+// @media screen and (min-width:$mobile) {
+
+//     @media screen and (min-device-pixel-ratio: 2),
+//     screen and (-webkit-min-device-pixel-ratio: 2),
+//     screen and (min-resolution: 192dpi),
+//     screen and (min-resolution: 2dppx),
+//     screen and (min-resolution: 192dpi),
+//     screen and (min-resolution: 2dppx) {
+//         .background__wave {
+//             background-image: url(../images/mobile/2x_480_bottom.jpg);
+//         }
+//     }
+// }
+
+// @media screen and (min-width:$tablet) {
+
+//     @media screen and (min-device-pixel-ratio: 2),
+//     screen and (-webkit-min-device-pixel-ratio: 2),
+//     screen and (min-resolution: 192dpi),
+//     screen and (min-resolution: 2dppx),
+//     screen and (min-resolution: 192dpi),
+//     screen and (min-resolution: 2dppx) {
+//         .background__wave {
+//             background-image: url(../images/tablet/2x_bottom.jpg);
+//         }
+//     }
+// }
+// @media screen and (min-width:$desktop) {
+
+//     @media screen and (min-device-pixel-ratio: 2),
+//     screen and (-webkit-min-device-pixel-ratio: 2),
+//     screen and (min-resolution: 192dpi),
+//     screen and (min-resolution: 2dppx),
+//     screen and (min-resolution: 192dpi),
+//     screen and (min-resolution: 2dppx) {
+//         .background__wave {
+//             background-image: url(../images/desktop/2x_bottom.jpg);
+//         }
+//     }
+// }
+
+
+
+
+    .customer__say {
+        padding: 60px 20px;
+
+
+        @media screen and(min-width:$tablet) {
+            padding: 60px 32px 120px 32px;
+        }
+
+        @media screen and(min-width:$desktop) {
+            padding: 100px 123px 200px 16px;
+        }
+
+    }
+
+    .section__title {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 1.18;
+        margin-bottom: 20px;
+    }
+
+    .section__subtitle {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.14;
+        margin-bottom: 32px;
+    }
+
+    .coment__list {
+        display: flex;
+        flex-direction: inherit;
+        flex-wrap: wrap;
+        gap: 24px;
+
+        @media screen and(min-width:$tablet) {
+
+            gap: 32px;
+        }
+
+        @media screen and(min-width:$desktop) {
+            gap: 139px;
+        }
+
+    }
+
+    .coment__item {
+        display: flex;
+        flex-direction: column;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.5;
+        background-color: #FFFFFF;
+        border-radius: 0px 30px 30px 30px;
+        padding: 8px;
+
+        @media screen and(min-width:768px) {
+            width: calc((100% - 32px)/2);
+        }
+
+        @media screen and(min-width:1280px) {
+            width: calc((100% - 139px)/2);
+        }
+
+
+    }
+
+    .coment__stars {
+        display: flex;
+        flex-direction: row;
+        gap: 4px;
+        margin-bottom: 28px;
+
+    }
+
+    // .stars__icon {}
+
+    .customer__quote {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 1.18;
+        margin-bottom: 40px;
+    }
+
+    .people {
+        display: flex;
+        border-right: 1px solid #7EB101;
+        // transform: rotate(90deg);
+        width: 160px;
+        height: 52px;
+
+    }
+
+    .people__about {
+        margin-left: 16px;
+    }
+
+    .poeple__name {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .people__decs {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.5;
+    }
