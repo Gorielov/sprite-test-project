@@ -1,3 +1,139 @@
-<header>
-    Все починається із хедеру :)
-</header>
+<!--Хедер-->
+<section class="header">
+  <header>
+    <div class="header__container container">
+      <div class="logo">
+        <svg class="logo_icon" width="66" height="52">
+          <use href="./images/symbol-defs.svg#logo"></use>
+        </svg>
+
+        <button data-open-menu class="burger-open js-open-menu">
+          <svg class="burger__icon" width="28" height="28">
+            <use href="./images/symbol-defs.svg#header-burger"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!--Мобільне меню-->
+      <div data-menu class="mobile-menu js-menu-container" id="mobile-nav">
+        <button
+          data-close-menu
+          type="button"
+          class="burger-close js-close-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="cross-icon" width="11" height="11">
+            <use href="./images/symbol-defs.svg#header-menu-cross"></use>
+          </svg>
+        </button>
+        <nav class="mobile-nav">
+          <ul class="mobile-nav__list">
+            <li class="mobile-nav__item">
+              <a href="#" class="mobile-nav__link mobile-nav__link--current"
+                >Home</a
+              >
+            </li>
+            <li class="mobile-nav__item">
+              <a href="#" class="mobile-nav__link">About</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="#" class="mobile-nav__link">Service</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="#" class="mobile-nav__link">Menu</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a href="#" class="mobile-nav__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!--Десктопне меню-->
+      <nav class="navigation">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="" class="nav__link nav__link--current">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">Service</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">Menu</a>
+          </li>
+          <li class="nav__item">
+            <a href="" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button data-modal-open type="button" class="button-order">
+        Order Now
+      </button>
+    </div>
+  </header>
+</section>
+
+<!--Модальне вікно-->
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="button-close" data-modal-close type="button">
+      <svg class="icon-close" width="11" height="11">
+        <use href="./images/symbol-defs.svg#header-menu-cross"></use>
+      </svg>
+    </button>
+
+    <form class="form">
+      <h3 class="form__title">Order Form</h3>
+
+      <div class="form__field">
+        <div class="form__item">
+          <label class="form__lable" for="name">Name</label>
+          <div class="form__input">
+            <input
+              class="form__input-line"
+              type="text"
+              name="username"
+              id="name"
+              placeholder="Your name"
+              autofocus
+            />
+          </div>
+        </div>
+        <div class="form__item">
+          <label class="form__lable" for="phone-number">Phone number</label>
+          <div class="form__input">
+            <input
+              class="form__input-line"
+              type="tel"
+              name="phone_number"
+              id="phone-number"
+              placeholder="+38(0_ _)_ _ _  _ _  _ _"
+            />
+          </div>
+        </div>
+        <div class="form__item">
+          <label class="form__lable" for="email">E-mail</label>
+          <div class="form__input">
+            <input
+              class="form__input-line"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="example@gmail.com"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="form__button-field">
+        <button class="form__button" type="button">Send</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<script src="./js/mobile-menu.js"></script>
+<script src="./js/modal.js"></script>

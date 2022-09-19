@@ -1,0 +1,204 @@
+.hero__container {
+  position: relative;
+  @media screen and (max-width: $tablet) {
+    padding-bottom: 50px;
+    padding-top: 60px;
+    max-width: 480px;
+  }
+  @media screen and (min-width: $tablet) {
+    max-width: $tablet;
+    @media screen and (max-width: $desktop) {
+      padding-bottom: 60px;
+      padding-top: 73px;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    max-width: $desktop;
+    align-items: center;
+  }
+}
+
+.hero__box {
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-right: 158px;
+  }
+}
+
+.slider {
+  @media screen and (max-width: $tablet) {
+    display: none;
+  }
+  @media screen and (max-width: $desktop) and (min-width: $tablet) {
+    position: absolute;
+    bottom: 0;
+    right: 32px;
+  }
+  @media screen and (min-width: $desktop) {
+    max-height: 608px;
+    padding: 14px 0;
+  }
+}
+
+.slider:hover {
+  .slider__img {
+    @media screen and (min-width: $tablet) {
+      border: 14px solid #bbf330;
+    }
+    @media screen and (min-width: $desktop) {
+      border: 26px solid #bbf330;
+    }
+  }
+}
+
+.slider__img {
+  border-radius: 50%;
+  margin: 0 auto;
+  @media screen and (min-width: $tablet) {
+    max-width: 320px;
+    border: 14px solid #ffe550;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 580px;
+    border: 26px solid #ffe550;
+  }
+}
+
+.swiper {
+  @media screen and (min-width: $tablet) {
+    max-width: 336px;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 608px;
+  }
+  max-width: 608px;
+  max-height: 580px;
+}
+
+.main-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.2;
+  margin-bottom: 28px;
+
+  color: #2c2c2c;
+  @media screen and (min-width: $tablet) {
+    max-width: 537px;
+
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 1.19;
+    margin-bottom: 44px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.2;
+    color: #2c2c2c;
+    margin-bottom: 28px;
+  }
+}
+.hero__subtitle {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #2c2c2c;
+
+  @media screen and (min-width: $tablet) {
+    max-width: 336px;
+    font-size: 16px;
+  }
+  @media screen and (min-width: $desktop) {
+    max-width: 502px;
+  }
+}
+.hero__button {
+  margin-top: 28px;
+  padding: 6px 18px;
+  background: $button-color;
+  border: none;
+  border-radius: 30px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #2c2c2c;
+  &:hover {
+    background: #b5ff00;
+    cursor: pointer;
+  }
+  &:focus {
+    background: #b5ff00;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-top: 40px;
+  }
+}
+
+.swiper-button-next {
+  @media screen and (min-width: $tablet) {
+    position: absolute;
+    right: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 28px;
+    width: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    border-radius: 8px;
+    background-color: white;
+    color: #2c2c2c;
+    &:hover {
+      color: $second-color;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+    }
+    font-weight: 700;
+    &::after {
+      font-size: 20px;
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    right: 2;
+    height: 40px;
+    width: 48px;
+    &::after {
+      font-size: 25px;
+    }
+  }
+}
+
+.swiper-button-prev {
+  @media screen and (min-width: $tablet) {
+    position: absolute;
+    left: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 28px;
+    width: 30px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    background-color: white;
+    color: #2c2c2c;
+    &:hover {
+      color: $second-color;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+    }
+    font-weight: 700;
+
+    &::after {
+      font-size: 20px;
+    }
+    @media screen and (min-width: $desktop) {
+      left: 2px;
+      height: 40px;
+      width: 48px;
+      &::after {
+        font-size: 25px;
+      }
+    }
+  }
+}
